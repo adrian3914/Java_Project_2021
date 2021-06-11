@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="Person" class="com.example.finalprojectrev1.entities.Person">
+        <property name="firstName" value="Adrian" />
+        <property name="lastName" value="Paz" />
+        <property name="DOB" value="1980-10-04" />
+
+    </bean>
+
+    <bean id="UserBean" parent="Person" class="com.example.finalprojectrev1.entities.User">
+        <property name="userName" value="ap@yahoo.ca" />
+        <property name="password" value="Mart123@1" />
+        <property name="eMail" value="ap@yahoo.ca" />
+        <property name="contactTelNo" value="123-234-4567" />
+    </bean>
+
+</beans>
